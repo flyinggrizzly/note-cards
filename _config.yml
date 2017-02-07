@@ -14,5 +14,7 @@ url: "http://github.com/flyinggrizzly/note-cards"
 twitter_username: flying_grizzly
 github_username:  flyinggrizzly
 
+copyright_owner: Flying Grizzly
+
 # Build settings
 markdown: kramdown

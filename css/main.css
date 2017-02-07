@@ -13,6 +13,13 @@ header, main, aside, footer {
     clear:both;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Column layouts */
 
 .container {
@@ -28,6 +35,8 @@ header, main, aside, footer {
   left: 5px;
   width: calc(100% - 10px);
 
+  border: 1px solid darkgrey;
+
   background-color: rgba(240, 240, 240, .95)
 }
 
@@ -35,9 +44,38 @@ header, main, aside, footer {
   margin-top: 1%;
 }
 
+footer {
+  padding: .2em;
+  border: 1px solid darkgrey;
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: .5em;
+}
+
+footer span {
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  float: right;
+}
+  .social-links li {
+    display: inline-block;
+
+  }
+
+  /* styles to ensure that the body isn't covered by the sticky header */
+  .header-offset {
+    visibility: hidden;
+    position: relative;
+  }
+
 main {
   position: relative;
-  margin-top: 200px;
 }
 
 .note-card {
@@ -49,4 +87,32 @@ main {
 }
   .note-card h2 {
     margin-top: 1%;
+  }
+
+/* Text appearance */
+.header {
+  padding: .2em;
+}
+.header h1 {
+  font-size: 1.5em;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+.sidebar h3 {
+  font-size: .8em;
+  margin-top: .25em;
+  margin-bottom: .25em;
+  text-decoration: underline;
+}
+
+.category-filters {
+  list-style: none;
+  padding-left: 0;
+  margin-top: .15em;
+  margin-bottom: 0;
+}
+  .category-filters li {
+    margin: .5em;
+    display: inline-block;
   }
