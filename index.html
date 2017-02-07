@@ -15,6 +15,8 @@ title: home
         <header class="header">
           <h1>{{ site.title }}</h1>
 
+          <h6 class="source">(Source and contribute)</h6>
+
           <aside class="sidebar">
             <h3>Category filters</h3>
             <!-- TODO: liquid for-loop to catch all categories -->
@@ -61,6 +63,8 @@ title: home
 
         <div class="header-offset header" aria-hidden="true">
           <h1>{{ site.title }}</h1>
+
+          <h6 class="source">(Source and contribute)</h6>
 
           <aside class="sidebar">
             <h3>Category filters</h3>
@@ -198,10 +202,10 @@ title: home
           <span>&copy; {{ 'now' | date: "%Y" }} {{ site.copyright_owner }}</span>
           <ul class="social-links">
             <li>
-              <a href="www.github.com/{{ site.github_username }}"<i class="fa fa-github-alt"></i></a>
+              <a href="http://www.github.com/{{ site.github_username }}"<i class="fa fa-github-alt"></i></a>
             </li>
             <li>
-              <a href="twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+              <a href="http://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
             </li>
           </ul>
         </footer>
