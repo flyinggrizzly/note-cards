@@ -1,23 +1,121 @@
 ---
-layout: default
+title: home
 ---
 
-<div class="home">
+<!doctype html>
+<html class="no-js" lang="">
 
-  <h1 class="page-heading">Posts</h1>
+    {% include head.html %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+      <div class="container">
+        <header class="header">
+          <h1>{{ site.title }}</h1>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+          <aside class="sidebar">
+            <h3>Category filters</h3>
+            <!-- TODO: liquid for-loop to catch all categories -->
+            <ul>
+              <li>
+                Filter 1
+              </li>
+              <li>
+                Filter 2
+              </li>
+            </ul>
+          </aside>
+        </header>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+
+        <main>
+
+            <!-- TODO: liquid for-loop to catch all notes -->
+          <div class="note-card">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card -->
+          <div class="note-card">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card -->
+          <div class="note-card">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card -->
+          <div class="note-card">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card -->
+          <div class="note-card">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card -->
+          <div class="note-card">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card -->
+          <div class="note-card">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card -->
+          <div class="note-card">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card -->
+
+        </main>
+      </div><!-- /.container -->
+    </body>
+</html>
