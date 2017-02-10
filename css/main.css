@@ -59,7 +59,7 @@ a i.fa {
   /* Flexbox stuff */
 header {
   display: flex;
-  flex-flow: row wrap-reverse;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: baseline;
 }
@@ -84,18 +84,33 @@ header {
   /* Flexbox stuff */
 aside {
   display: flex;
-  flex-flow: row-reverse wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 aside h3 {
   align-self: end;
+  order: 1;
 }
 
 aside form {
   margin-top: 1%;
+  margin-left: 10%;
+  order: 2;
 }
+
+aside ul {
+  order: 3;
+}
+
+  /* Other sidebar styles */
+aside {
+  background-color: rgb(110, 110, 110);
+}
+  aside * {
+    color: white;
+  }
 
 .category-filters-list {
   flex-basis: 100%;
@@ -115,10 +130,30 @@ aside form {
 
   /* Styling */
   label div {
-    color: rgb(50,50,50);
     font-style: italic;
     font-size: .9em;
   }
+
+/* Style Main */
+
+.note-card {
+  background-color: RGBA(247, 247, 235, 1.00);
+  line-height: 1.2em;
+  font-size: 1.2em;
+}
+.note-card h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+}
+.note-card h3 {
+  font-size: .8em;
+  margin-top: 1%;
+}
+.note-card a {
+  color: red;
+  text-decoration: underline;
+}
 
 /* Style footer */
   /* flexbox styles */
@@ -144,10 +179,11 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
     footer ul li {
       display: inline-block;
+      margin-right: 1em;
     }
 
   /* other styles */
@@ -157,3 +193,75 @@ footer {
     footer *, .social-links li a i.fa {
       color: white;
     }
+
+@media screen and (min-width: 720px) {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  header {
+    flex: 1 100%;
+    order: 1;
+  }
+    header h1 {
+      margin-left: 1em;
+    }
+
+  aside {
+    flex: 1 0px;
+    order: 2;
+
+    align-content: flex-start;
+    justify-content: flex-start;
+
+  }
+    aside h3 {
+      flex: 100% auto 1;
+    }
+    aside form {
+      flex: 100% auto 1;
+    }
+    .category-filters-list {
+      flex-basis: static;
+    }
+    .category-filters-list li {
+      flex: 1 100%;
+      margin-left: .5em;
+    }
+
+  main {
+    flex: 3 0px;
+    order: 3;
+  }
+
+  footer {
+    flex: 1 100%;
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    flex-grow: 4;
+
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .note-card {
+    flex: 1 45%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    flex-grow: 5;
+  }
+  .note-card {
+    flex: 1 29%;
+  }
+    .note-card.box {
+      margin: 1%;
+    }
+}
