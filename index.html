@@ -12,157 +12,174 @@ title: home
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
       <div class="container">
-        <div class="ui-bar-positioner">
-          <header>
-            <h1>{{ site.title }}</h1>
 
-            <h6 class="source">(Source and contribute)</h6>
+        <header class="box cf">
+          <h1><a class="site-name" href="{{ site.url }}">{{ site.title }}</a></h1>
 
-            <aside class="category-filters">
-              <h3>Category filters</h3>
-              <!-- TODO: liquid for-loop to catch all categories -->
-              <ul class="category-filters-list">
-                <li>
-                  Filter 1
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-                <li>
-                  Filter 2
-                </li>
-              </ul>
-            </aside>
-          </header>
-        </div><!-- /.ui-bar -->
+          <h6 class="source"><a href="{{ site.contrib_url }}">(Source and contribute)</a></h6>
+        </header>
 
-        <div class="body-positioner">
-          <main>
+        <aside class="category-filters box">
 
-              <!-- TODO: liquid for-loop to catch all notes -->
-            <div class="note-card">
-              <h2>Note title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="note-card__tags">
-                <span class="note-tag">tag 1</span>
-                <span class="note-tag">tag 2</span>
-              </div><!-- /.note-card__tags -->
-            </div><!-- /.note-card -->
-            <div class="note-card">
-              <h2>Note title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="note-card__tags">
-                <span class="note-tag">tag 1</span>
-                <span class="note-tag">tag 2</span>
-              </div><!-- /.note-card__tags -->
-            </div><!-- /.note-card -->
-            <div class="note-card">
-              <h2>Note title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="note-card__tags">
-                <span class="note-tag">tag 1</span>
-                <span class="note-tag">tag 2</span>
-              </div><!-- /.note-card__tags -->
-            </div><!-- /.note-card -->
-            <div class="note-card">
-              <h2>Note title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="note-card__tags">
-                <span class="note-tag">tag 1</span>
-                <span class="note-tag">tag 2</span>
-              </div><!-- /.note-card__tags -->
-            </div><!-- /.note-card -->
-            <div class="note-card">
-              <h2>Note title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="note-card__tags">
-                <span class="note-tag">tag 1</span>
-                <span class="note-tag">tag 2</span>
-              </div><!-- /.note-card__tags -->
-            </div><!-- /.note-card -->
-            <div class="note-card">
-              <h2>Note title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="note-card__tags">
-                <span class="note-tag">tag 1</span>
-                <span class="note-tag">tag 2</span>
-              </div><!-- /.note-card__tags -->
-            </div><!-- /.note-card -->
-            <div class="note-card">
-              <h2>Note title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="note-card__tags">
-                <span class="note-tag">tag 1</span>
-                <span class="note-tag">tag 2</span>
-              </div><!-- /.note-card__tags -->
-            </div><!-- /.note-card -->
-            <div class="note-card">
-              <h2>Note title</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="note-card__tags">
-                <span class="note-tag">tag 1</span>
-                <span class="note-tag">tag 2</span>
-              </div><!-- /.note-card__tags -->
-            </div><!-- /.note-card -->
+          <form>
+            <label for="search">
+              <span>
+                <input type="search" placeholder="search" id="search"></input>
+                <i class="fa fa-search"></i>
+              </span>
+              <div>search for keywords and tags</div>
+            </label>
+          </form>
 
-          </main>
-        </div><!-- /.body-positioner -->
-        <div class="footer-positioner">
-          <footer class="cf">
-            <span>&copy; {{ 'now' | date: "%Y" }} {{ site.copyright_owner }}</span>
-            <ul class="social-links">
-              <li>
-                <a href="http://www.github.com/{{ site.github_username }}"<i class="fa fa-github-alt"></i></a>
-              </li>
-              <li>
-                <a href="http://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
-              </li>
-            </ul>
-          </footer>
-        </div><!-- /.footer-positioner -->
+          <h3>Category filters</h3>
+          <!-- TODO: liquid for-loop to catch all categories -->
+          <ul class="category-filters-list">
+            <li>
+              Filter 1
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+            <li>
+              Filter 2
+            </li>
+          </ul>
+        </aside>
+
+
+        <main>
+
+            <!-- TODO: liquid for-loop to catch all notes -->
+          <div class="note-card box">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card box -->
+
+          <div class="note-card box">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card box -->
+
+          <div class="note-card box">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card box -->
+
+          <div class="note-card box">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card box -->
+
+          <div class="note-card box">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card box -->
+
+          <div class="note-card box">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card box -->
+
+          <div class="note-card box">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card box -->
+
+          <div class="note-card box">
+            <h2>Note title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="note-card__tags">
+              <span class="note-tag">tag 1</span>
+              <span class="note-tag">tag 2</span>
+            </div><!-- /.note-card__tags -->
+          </div><!-- /.note-card box -->
+
+        </main>
+
+
+        <footer class="box">
+          <span>&copy; {{ 'now' | date: "%Y" }} {{ site.copyright_owner }}</span>
+          <ul class="social-links">
+            <li>
+              <a href="http://www.github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href="http://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+            </li>
+          </ul>
+        </footer>
+
       </div><!-- /.container -->
     </body>
 </html>

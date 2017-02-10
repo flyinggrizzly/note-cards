@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  font-family: 'Inconsolata', monospace;
 }
 header, main, aside, footer {
   display: block;
@@ -20,130 +21,139 @@ html {
   box-sizing: inherit;
 }
 
-/* Column layouts */
-
-.container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.ui-bar-positioner {
-  position: fixed;
-  width: 25%;
-  height: calc(100% - 4em);
-}
-.body-positioner {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 75%;
-  margin-left: 25%;
-  overflow-y: scroll;
-}
-.footer-positioner {
-  position: fixed;
-  width: 25%;
-  bottom: 0;
-}
-header {
-  /*position: fixed;
-  z-index: 100;
-  top: 5px;
-  left: 5px;
-  width: calc(100% - 10px);*/
-  height: 100%;
-  width: 95%;
-
-  padding: .2em;
-  margin: 0 auto;
-  margin-top: 10px;
+/* Style boxes */
+.box {
   border: 1px solid darkgrey;
+  border-radius: 3px;
+  margin: 2%;
+  padding: .5em;
+}
+  header.box, footer.box {
+    margin: 1%;
+  }
 
-  background-color: rgba(240, 240, 240, .95);
+.fa-search {
+  margin-left: -24px;
 }
 
-main {
-  position: relative;
-  overflow: auto;
-  max-height: 98%;
+/* Style text */
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+  a:hover {
+    text-decoration: underline;
+  }
+a i.fa {
+  color: black;
+}
+  a i.fa:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+
+
+
+/* Header styles */
+  /* Flexbox stuff */
+header {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.sidebar {
+header h1, header h6 {
+  margin-bottom: 0;
+}
+
+  /* Other header styles */
+header {
+  background-color: rgb(70, 70, 70);
+}
+  header h1 a {
+    color: white;
+  }
+  header h6 a {
+    color: white;
+    font-size: 1.5em;
+  }
+
+/* Sidebar/Cat filter styles */
+  /* Flexbox stuff */
+aside {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+aside h3 {
+  align-self: end;
+}
+
+aside form {
   margin-top: 1%;
 }
 
+.category-filters-list {
+  flex-basis: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  padding-left: 0;
+  list-style: none;
+}
+  .category-filters-list li {
+    flex: auto;
+    flex-basis: auto;
+    margin: 2%;
+  }
+
+  /* Styling */
+  label div {
+    color: rgb(50,50,50);
+    font-style: italic;
+    font-size: .9em;
+  }
+
+/* Style footer */
+  /* flexbox styles */
 footer {
-  padding: .2em;
-  border: 1px solid darkgrey;
-  background-color: rgba(240, 240, 240, .95);
-  border-radius: 2px;
-  width: 95%;
-  margin: 0 auto;
-  margin-bottom: .5em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
 }
-
-footer span {
-  float: left;
-}
-
-.social-links {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-  float: right;
-}
-  .social-links li {
-    display: inline-block;
+  footer span {
+    flex: auto;
+    flex-grow: 2;
   }
-  .social-links li a {
-    color: black;
+  footer ul {
+    flex: auto;
+
+    /* clear list styles */
+    padding-left: 0;
+    list-style: none;
+
+    margin: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
   }
+    footer ul li {
+      display: inline-block;
+    }
 
-main {
-  position: relative;
-}
-
-.note-card {
-  margin: 5%;
-  border: 1px solid darkgrey;
-  border-radius: 2px;
-  padding: 3%;
-}
-  .note-card h2 {
-    margin-top: 1%;
+  /* other styles */
+  footer {
+    background-color: rgb(70, 70, 70);
   }
-
-/* Text appearance */
-header {
-  padding: .2em;
-}
-.header h1 {
-  display: inline-block;
-  font-size: 1.5em;
-  margin-top: .25em;
-  margin-bottom: .25em;
-}
-
-header h6 {
-  margin-left: 1em;
-  display: inline-block;
-}
-
-.sidebar h3 {
-  font-size: .8em;
-  margin-top: .25em;
-  margin-bottom: .25em;
-  text-decoration: underline;
-}
-
-.category-filters {
-  list-style: none;
-  padding-left: 0;
-  margin-top: .15em;
-  margin-bottom: 0;
-}
-  .category-filters li {
-    margin: .5em;
-    display: inline-block;
-  }
+    footer *, .social-links li a i.fa {
+      color: white;
+    }
