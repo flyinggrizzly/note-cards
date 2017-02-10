@@ -28,13 +28,29 @@ html {
   position: relative;
 }
 
-.header {
+.ui-bar-positioner {
   position: fixed;
+  width: 25%;
+  height: 80%;
+}
+.body-positioner {
+  position: fixed;
+  width: 75%;
+  margin-left: 25%;
+  overflow: scroll;
+}
+.footer-positioner {
+  position: fixed;
+  width: 25%;
+  bottom: 0;
+}
+header {
+  /*position: fixed;
   z-index: 100;
   top: 5px;
   left: 5px;
-  width: calc(100% - 10px);
-
+  width: calc(100% - 10px);*/
+  height: 100%;
   border: 1px solid darkgrey;
 
   background-color: rgba(240, 240, 240, .95);
@@ -71,12 +87,6 @@ footer span {
     color: black;
   }
 
-  /* styles to ensure that the body isn't covered by the sticky header */
-  .header-offset {
-    visibility: hidden;
-    position: relative;
-  }
-
 main {
   position: relative;
 }
@@ -86,14 +96,13 @@ main {
   border: 1px solid darkgrey;
   border-radius: 2px;
   padding: 3%;
-  background-color: lightblue;
 }
   .note-card h2 {
     margin-top: 1%;
   }
 
 /* Text appearance */
-.header {
+header {
   padding: .2em;
 }
 .header h1 {
@@ -103,7 +112,7 @@ main {
   margin-bottom: .25em;
 }
 
-.header h6 {
+header h6 {
   margin-left: 1em;
   display: inline-block;
 }
