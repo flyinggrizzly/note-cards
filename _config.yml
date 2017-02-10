@@ -19,3 +19,6 @@ copyright_owner: Flying Grizzly
 
 # Build settings
 markdown: kramdown
+
+exclude:
+          - todo.md
