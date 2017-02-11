@@ -1,0 +1,6 @@
+<div class="note-card__tags">
+  <i class="fa fa-tags"></i>
+  {% for tag in note.tags %}
+    <a class="note-tag-link" href="/{{ tag }}">{{ tag }}</a>
+  {% endfor %}
+</div><!-- /.note-card__tags -->

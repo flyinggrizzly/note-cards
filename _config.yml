@@ -17,6 +17,27 @@ github_username:  flyinggrizzly
 contrib_url: > # Put the URL where people can contribute here.
 copyright_owner: Flying Grizzly
 
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "notes"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      author: "Sean DMR"
+      layout: "note"
+
+
+
 # Build settings
 markdown: kramdown
 
