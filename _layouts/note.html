@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<main>
+  <div class="box note-card note-full">
+    <div class="grouper"><!-- keep the h2 and h3 grouped -->
+      <h2 class="note-card-title"><a href="{{ note.url }}">{{ page.title }}</a></h2>
+      <h3>written by {{ page.author }}, on {{ page.date | date: "%d %b %Y" }}</h3>
+    </div><!-- /.grouper -->
+
+    <div class="note-content">
+      {{ content }}
+    </div><!-- /.note-content -->
+
+    
+  </div>
+
+</main>

@@ -197,6 +197,12 @@ aside {
     text-shadow: 0 0 10px darkgrey;
   }
 
+/* Style notes */
+.note-full {
+  padding: 3%;
+  padding-right: 5%;
+}
+
 /* Style footer */
   /* flexbox styles */
 footer {
